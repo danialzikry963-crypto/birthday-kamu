@@ -3,18 +3,15 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>For You ❤️</title>
-
+<title>For Sayang ❤️</title>
 
 <style>
 
-/* ==================================================
+/* ================================
    RESET
-================================================== */
+================================ */
 
 * {
     margin: 0;
@@ -23,16 +20,12 @@
 }
 
 
-/* ==================================================
+/* ================================
    BODY
-================================================== */
+================================ */
 
 body {
-
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
 
     background:
         radial-gradient(
@@ -43,51 +36,38 @@ body {
         );
 
     color: white;
-
     min-height: 100vh;
-
     overflow-x: hidden;
 }
 
 
-/* ==================================================
+/* ================================
    HOME PAGE
-================================================== */
+================================ */
 
 #home {
-
     min-height: 100vh;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
-
     padding: 25px;
 
     position: relative;
 }
 
-
 .home-content {
-
     width: 100%;
-
     max-width: 700px;
 
     animation: fadeIn 2s ease;
 }
 
-
 .small-text {
-
     font-size: 15px;
-
     letter-spacing: 4px;
-
     text-transform: uppercase;
 
     color: #ffb6ce;
@@ -95,28 +75,20 @@ body {
     margin-bottom: 25px;
 }
 
-
 .home-title {
-
-    font-size:
-        clamp(35px, 8vw, 70px);
+    font-size: clamp(35px, 8vw, 70px);
 
     font-weight: 300;
-
     line-height: 1.1;
 
     margin-bottom: 20px;
 }
 
-
 .home-title span {
-
     color: #ff6f9f;
 }
 
-
 .countdown {
-
     display: flex;
 
     justify-content: center;
@@ -128,9 +100,7 @@ body {
     margin-top: 35px;
 }
 
-
 .time-box {
-
     width: 105px;
 
     padding: 18px 10px;
@@ -149,9 +119,7 @@ body {
         0 10px 30px rgba(0,0,0,0.3);
 }
 
-
 .time-box span {
-
     display: block;
 
     font-size: 34px;
@@ -161,9 +129,7 @@ body {
     color: white;
 }
 
-
 .time-box small {
-
     color: #ffb6ce;
 
     font-size: 11px;
@@ -173,9 +139,7 @@ body {
     text-transform: uppercase;
 }
 
-
 .waiting {
-
     margin-top: 35px;
 
     color: #aaa;
@@ -185,6 +149,10 @@ body {
     animation: pulse 2s infinite;
 }
 
+
+/* ================================
+   PULSE
+================================ */
 
 @keyframes pulse {
 
@@ -198,12 +166,11 @@ body {
 }
 
 
-/* ==================================================
-   SURPRISE UNLOCK SCREEN
-================================================== */
+/* ================================
+   UNLOCK SCREEN
+================================ */
 
 #unlock {
-
     display: none;
 
     position: fixed;
@@ -228,16 +195,12 @@ body {
     padding: 25px;
 }
 
-
 .unlock-content {
-
     animation:
         unlockAppear 1.5s ease;
 }
 
-
 .unlock-content h1 {
-
     font-size:
         clamp(45px, 10vw, 90px);
 
@@ -246,17 +209,13 @@ body {
     margin-bottom: 20px;
 }
 
-
 .unlock-content p {
-
     color: #ddd;
 
     margin-bottom: 35px;
 }
 
-
 .surprise-button {
-
     border: none;
 
     padding: 18px 35px;
@@ -282,18 +241,13 @@ body {
     transition: .3s;
 }
 
-
 .surprise-button:hover {
-
     transform: scale(1.08);
-
 }
-
 
 @keyframes unlockAppear {
 
     from {
-
         opacity: 0;
 
         transform:
@@ -302,7 +256,6 @@ body {
     }
 
     to {
-
         opacity: 1;
 
         transform:
@@ -312,12 +265,11 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    SURPRISE PAGE
-================================================== */
+================================ */
 
 #surprisePage {
-
     display: none;
 
     min-height: 100vh;
@@ -329,17 +281,13 @@ body {
     animation: fadeIn 2s ease;
 }
 
-
 .surprise-container {
-
     max-width: 900px;
 
     margin: auto;
 }
 
-
 .surprise-label {
-
     color: #ff9fbd;
 
     letter-spacing: 4px;
@@ -351,9 +299,7 @@ body {
     margin-bottom: 15px;
 }
 
-
 .surprise-title {
-
     font-size:
         clamp(45px, 9vw, 80px);
 
@@ -362,9 +308,7 @@ body {
     margin-bottom: 10px;
 }
 
-
 .girl-name {
-
     font-size: 25px;
 
     margin-bottom: 40px;
@@ -373,12 +317,11 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    MAIN PHOTO
-================================================== */
+================================ */
 
 .main-photo {
-
     width: 280px;
 
     height: 280px;
@@ -397,12 +340,11 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    LOVE LETTER
-================================================== */
+================================ */
 
 .letter {
-
     max-width: 700px;
 
     margin: auto;
@@ -429,9 +371,7 @@ body {
         0 20px 60px rgba(0,0,0,.3);
 }
 
-
 .letter-title {
-
     font-size: 28px;
 
     color: #ff8faf;
@@ -440,12 +380,11 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    GALLERY
-================================================== */
+================================ */
 
 .gallery-title {
-
     margin-top: 70px;
 
     margin-bottom: 25px;
@@ -455,9 +394,7 @@ body {
     color: #ff9fbd;
 }
 
-
 .gallery {
-
     display: grid;
 
     grid-template-columns:
@@ -466,12 +403,10 @@ body {
     gap: 15px;
 }
 
-
 .gallery img {
-
     width: 100%;
 
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
 
     object-fit: cover;
 
@@ -485,9 +420,7 @@ body {
         2px solid rgba(255,255,255,.1);
 }
 
-
 .gallery img:hover {
-
     transform:
         scale(1.04)
         rotate(1deg);
@@ -497,55 +430,36 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    MUSIC
-================================================== */
+================================ */
 
 .music-box {
-
     margin-top: 50px;
 
-    padding: 20px;
+    padding: 25px;
 
     border-radius: 20px;
 
     background:
-        rgba(255,255,255,.06);
-}
+        rgba(255,255,255,.07);
 
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    color: #ffd3e1;
+}
 
 .music-box p {
-
-    margin-bottom: 15px;
-
-    color: #ffb6ce;
+    font-size: 17px;
 }
 
 
-.music-button {
-
-    border: none;
-
-    padding: 12px 25px;
-
-    border-radius: 30px;
-
-    background: #ff477e;
-
-    color: white;
-
-    cursor: pointer;
-
-    font-size: 15px;
-}
-
-
-/* ==================================================
+/* ================================
    FOOTER
-================================================== */
+================================ */
 
 .footer {
-
     margin-top: 70px;
 
     color: #777;
@@ -554,12 +468,11 @@ body {
 }
 
 
-/* ==================================================
-   HEARTS
-================================================== */
+/* ================================
+   FLOATING HEARTS
+================================ */
 
 .heart {
-
     position: fixed;
 
     bottom: -50px;
@@ -574,11 +487,9 @@ body {
         forwards;
 }
 
-
 @keyframes floatHeart {
 
     from {
-
         transform:
             translateY(0)
             rotate(0deg);
@@ -587,7 +498,6 @@ body {
     }
 
     to {
-
         transform:
             translateY(-110vh)
             rotate(360deg);
@@ -597,14 +507,13 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    FADE
-================================================== */
+================================ */
 
 @keyframes fadeIn {
 
     from {
-
         opacity: 0;
 
         transform:
@@ -612,7 +521,6 @@ body {
     }
 
     to {
-
         opacity: 1;
 
         transform:
@@ -621,43 +529,34 @@ body {
 }
 
 
-/* ==================================================
+/* ================================
    MOBILE
-================================================== */
+================================ */
 
 @media(max-width:600px) {
 
     .time-box {
-
         width: 75px;
 
         padding: 14px 5px;
     }
 
-
     .time-box span {
-
         font-size: 25px;
     }
 
-
     .gallery {
-
         grid-template-columns:
             repeat(2,1fr);
     }
 
-
     .main-photo {
-
         width: 220px;
 
         height: 220px;
     }
 
-
     .letter {
-
         font-size: 15px;
 
         padding: 25px 18px;
@@ -673,42 +572,36 @@ body {
 <body>
 
 
-<!-- ==================================================
-     🏠 HOME PAGE
-================================================== -->
+<!-- =========================================
+     HOME PAGE
+========================================= -->
 
 <section id="home">
 
     <div class="home-content">
 
-
         <div class="small-text">
-
             Something special is coming...
-
         </div>
 
 
         <h1 class="home-title">
 
             For
-            <span>[NAMA GF]</span>
+            <span>My Lady</span>
             ❤️
 
         </h1>
 
 
         <p>
-
-            Your surprise will be waiting for you.
-
+            May this little word pass by you.
         </p>
 
 
         <!-- COUNTDOWN -->
 
         <div class="countdown">
-
 
             <div class="time-box">
 
@@ -761,16 +654,14 @@ body {
 
             </div>
 
-
         </div>
 
 
         <div class="waiting">
 
-            🔒 Surprise locked...
+            🔒 Have some patience okie hihi
 
         </div>
-
 
     </div>
 
@@ -778,33 +669,26 @@ body {
 
 
 
-<!-- ==================================================
-     🎉 UNLOCK SCREEN
-================================================== -->
+<!-- =========================================
+     UNLOCK SCREEN
+========================================= -->
 
 <section id="unlock">
 
     <div class="unlock-content">
 
-
         <h1>
-
             🎉
-
         </h1>
 
 
         <h1>
-
-            It's Time!
-
+            Kikiki
         </h1>
 
 
         <p>
-
-            Your birthday surprise is finally unlocked ❤️
-
+            I hope you not die by the cringe keke ❤️
         </p>
 
 
@@ -816,208 +700,240 @@ body {
 
         </button>
 
-
     </div>
 
 </section>
 
 
 
-<!-- ==================================================
-     ❤️ SURPRISE PAGE
-================================================== -->
+<!-- =========================================
+     SURPRISE PAGE
+========================================= -->
 
 <section id="surprisePage">
 
-
-<div class="surprise-container">
-
-
-    <div class="surprise-label">
-
-        A special message for
-
-    </div>
+    <div class="surprise-container">
 
 
-    <h1 class="surprise-title">
+        <div class="surprise-label">
 
-        Happy Birthday ❤️
-
-    </h1>
-
-
-    <div class="girl-name">
-
-        [NAMA GF]
-
-    </div>
-
-
-    <!-- MAIN PHOTO -->
-
-    <img
-        src="photo1.jpg"
-        class="main-photo"
-        alt="Our Photo"
-    >
-
-
-    <!-- LOVE LETTER -->
-
-    <div class="letter">
-
-
-        <div class="letter-title">
-
-            💌 Dear My Favourite Person
+            A special message for Sayang
 
         </div>
 
 
-        <p>
+        <h1 class="surprise-title">
 
-            Happy Birthday, sayang ❤️
+            Happy Birthday ❤️
 
-            <br><br>
-
-            Today is your special day,
-            and I just want to remind you
-            how important you are to me.
-
-            <br><br>
-
-            Thank you for every laugh,
-            every conversation,
-            every memory,
-            and every little moment
-            we've shared together.
-
-            <br><br>
-
-            I hope this new chapter
-            of your life brings you
-            happiness, peace,
-            success and many beautiful memories.
-
-            <br><br>
-
-            I may not always be perfect,
-            and sometimes I may not know
-            exactly what to say...
-
-            <br><br>
-
-            But one thing I know for sure:
-
-            <br><br>
-
-            <strong>
-            I'm really happy that I get
-            to know someone like you. ❤️
-            </strong>
-
-            <br><br>
-
-            Keep smiling,
-            keep being yourself,
-            and never forget
-            how special you are.
-
-            <br><br>
-
-            Happy Birthday,
-            my favourite person. ❤️
-
-        </p>
+        </h1>
 
 
-    </div>
+        <div class="girl-name">
+
+            Sayang
+
+        </div>
 
 
-
-    <!-- ==================================================
-         📸 GALLERY
-    ================================================== -->
-
-    <h2 class="gallery-title">
-
-        📸 Our Memories
-
-    </h2>
-
-
-    <div class="gallery">
-
+        <!-- MAIN PHOTO -->
 
         <img
             src="photo1.jpg"
-            alt="Memory 1"
+            class="main-photo"
+            alt="Izyan Auni"
         >
 
 
-        <img
-            src="photo2.jpg"
-            alt="Memory 2"
-        >
+        <!-- LOVE LETTER -->
+
+        <div class="letter">
+
+            <div class="letter-title">
+
+                My Beloved Lady,
+
+            </div>
 
 
-        <img
-            src="photo3.jpg"
-            alt="Memory 3"
-        >
+            <p>
+
+                May good things come your way. ❤️
+
+                <br><br>
+
+                On this beautiful night,
+                let me have the honour of being the first
+                to wish you a day filled with happiness,
+                love, and everything your heart deserves.
+
+                It has been exactly 410 days since we began this journey together,
+                and somehow, every single day since then
+                has become one of the most precious chapters of my life.
+
+                Every moment with you has been a memory worth keeping,
+                and every day beside you has been a gift
+                I never want to take for granted.
+
+                
+
+                <br><br>
+
+  
+
+
+
+                Thank you for every laugh we’ve shared,
+                every conversation that stayed in my heart,
+                every memory we’ve created,
+                and every little moment that made our time together special.
+
+                Thank you for teaching me that love can be patient,
+                that love can be sincere,
+                and that being loved by someone can feel like home.
+                For every lesson, every moment, and every piece of happiness
+                I’ll always be grateful for you.
+     
+                
+
+                
+                
+                
+
+                <br><br>
+
+                Even through the storms we’ve faced,
+                we chose to stand beside each other
+                and face every challenge together.
+                We never let the hard days become the end of our story;
+                instead, they became the moments that brought us closer
+                and made our love grow stronger than before.
+ 
+                
+                
+                
+                
+                
+
+                <br><br>
+
+                Oh my darling,
+                Please give me your apologies for all my shortcomings my dear.
+                Forgive me for the days I couldn’t be by your side, for the flowers that never reached your hands, and for the luxuries I couldn’t give you.
+                I may not have much to offer, but what I have, 
+                I’ll always give with a genuine heart because loving you was never about how much I could buy, but how much of myself I could give.
+
+                
+                
+                
+
+                <br><br>
+
+                But one thing I know for sure:
+
+                <br><br>
+
+                <strong>
+
+                Wherever life takes you,
+                through every high and every low,
+                just know that I’ll always be there
+                a quiet presence you can always come home to.
+  
+                    
+
+                </strong>
+
+                <br><br>
+
+               Please, always be yourself.
+               I love you for exactly who you are
+               your smile, your little flaws, and every little thing that makes you, you.
+               You don’t need to be perfect, because to me, you already are.
+
+                
+                
+
+                <br><br>
+
+                To Another Beautiful Year of You
+                My Dear Lady ❤️
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             GALLERY
+        ====================================== -->
+
+        <h2 class="gallery-title">
+
+            📸 Our Memories
+
+        </h2>
+
+
+        <div class="gallery">
+
+            <img
+                src="photo1.jpg"
+                alt="Memory 1"
+            >
+
+
+            <img
+                src="photo2.jpg"
+                alt="Memory 2"
+            >
+
+
+            <img
+                src="photo3.jpg"
+                alt="Memory 3"
+            >
+
+        </div>
+
+
+
+        <!-- =====================================
+             MUSIC
+        ====================================== -->
+
+        <div class="music-box">
+
+            <p>
+
+                🎵 A little song for you ❤️
+
+            </p>
+
+
+            <audio
+                id="music"
+                loop>
+
+                <source
+                    src="song.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+        </div>
+
+
+
+        <div class="footer">
+
+            Made with ❤️ just for you
+
+        </div>
 
 
     </div>
-
-
-
-    <!-- ==================================================
-         🎵 MUSIC
-    ================================================== -->
-
-    <div class="music-box">
-
-
-        <p>
-
-            🎵 A little song for you
-
-        </p>
-
-
-        <button
-            class="music-button"
-            onclick="toggleMusic()">
-
-            ▶ Play Music
-
-        </button>
-
-
-        <audio
-            id="music"
-            loop>
-
-            <source
-                src="song.mp3"
-                type="audio/mpeg">
-
-        </audio>
-
-
-    </div>
-
-
-
-    <div class="footer">
-
-        Made with ❤️ just for you
-
-    </div>
-
-
-</div>
 
 </section>
 
@@ -1026,52 +942,43 @@ body {
 <script>
 
 
-/* ==================================================
+/* =========================================
    🎂 BIRTHDAY DATE
-==================================================
+========================================= */
 
-   FORMAT:
+/*
+   Tukar tarikh dekat sini.
+
+   Format:
 
    YYYY-MM-DD HH:MM:SS
 
    Contoh:
-
-   15 October 2026
-   12:00 AM
-
-================================================== */
-
+   2026-10-04 00:00:00
+*/
 
 const birthday =
     new Date(
-        "2026-9-30 16:00:00"
+        "2026-10-04 00:00:00"
     ).getTime();
 
 
 
-/* ==================================================
+/* =========================================
    COUNTDOWN
-================================================== */
+========================================= */
 
 const countdown =
 setInterval(function() {
 
-
     const now =
         new Date().getTime();
-
 
     const distance =
         birthday - now;
 
 
-
-    /* ==============================================
-       STILL COUNTING
-    ============================================== */
-
     if(distance > 0) {
-
 
         const days =
             Math.floor(
@@ -1107,189 +1014,121 @@ setInterval(function() {
             );
 
 
-
-        document.getElementById(
-            "days"
-        ).innerText =
+        document.getElementById("days").innerText =
             String(days).padStart(2,"0");
 
 
-        document.getElementById(
-            "hours"
-        ).innerText =
+        document.getElementById("hours").innerText =
             String(hours).padStart(2,"0");
 
 
-        document.getElementById(
-            "minutes"
-        ).innerText =
+        document.getElementById("minutes").innerText =
             String(minutes).padStart(2,"0");
 
 
-        document.getElementById(
-            "seconds"
-        ).innerText =
+        document.getElementById("seconds").innerText =
             String(seconds).padStart(2,"0");
-
 
     }
 
 
-
-    /* ==============================================
-       🎉 BIRTHDAY ARRIVED
-    ============================================== */
-
     else {
-
 
         clearInterval(countdown);
 
 
-        document.getElementById(
-            "days"
-        ).innerText = "00";
-
-
-        document.getElementById(
-            "hours"
-        ).innerText = "00";
-
-
-        document.getElementById(
-            "minutes"
-        ).innerText = "00";
-
-
-        document.getElementById(
-            "seconds"
-        ).innerText = "00";
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
 
 
         /* Hide homepage */
 
-        document.getElementById(
-            "home"
-        ).style.display = "none";
+        document.getElementById("home")
+            .style.display = "none";
 
 
-        /* Show unlock */
+        /* Show unlock screen */
 
-        document.getElementById(
-            "unlock"
-        ).style.display = "flex";
+        document.getElementById("unlock")
+            .style.display = "flex";
 
 
-        /* BIG HEART EFFECT */
+        /* Hearts */
 
         createHearts(60);
 
     }
 
-
 },1000);
 
 
 
-/* ==================================================
+/* =========================================
    💌 OPEN SURPRISE
-================================================== */
+========================================= */
 
 function openSurprise() {
 
+    /* Hide unlock */
 
-    /* Hide unlock screen */
-
-    document.getElementById(
-        "unlock"
-    ).style.display = "none";
+    document.getElementById("unlock")
+        .style.display = "none";
 
 
-    /* Show surprise page */
+    /* Show surprise */
 
-    document.getElementById(
-        "surprisePage"
-    ).style.display = "block";
-
-
-    /* Start hearts */
-
-    createHearts(40);
+    document.getElementById("surprisePage")
+        .style.display = "block";
 
 
-    /* Scroll to top */
+    /* Start music */
+
+    const music =
+        document.getElementById("music");
+
+
+    music.volume = 0.5;
+
+
+    music.play()
+        .then(function() {
+
+            console.log("Music started!");
+
+        })
+        .catch(function(error) {
+
+            console.log(
+                "Music could not start:",
+                error
+            );
+
+        });
+
+
+    /* Hearts */
+
+    createHearts(60);
+
+
+    /* Scroll top */
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 
-
 }
 
 
 
-/* ==================================================
-   🎵 MUSIC
-================================================== */
-
-let playing = false;
-
-
-function toggleMusic() {
-
-
-    const music =
-        document.getElementById("music");
-
-
-    const button =
-        document.querySelector(
-            ".music-button"
-        );
-
-
-    if(!playing) {
-
-
-        music.play();
-
-
-        playing = true;
-
-
-        button.innerText =
-            "⏸ Pause Music";
-
-
-    }
-
-
-    else {
-
-
-        music.pause();
-
-
-        playing = false;
-
-
-        button.innerText =
-            "▶ Play Music";
-
-
-    }
-
-}
-
-
-
-/* ==================================================
+/* =========================================
    ❤️ FLOATING HEARTS
-================================================== */
+========================================= */
 
 function createHearts(amount) {
-
 
     for(
         let i = 0;
@@ -1297,14 +1136,10 @@ function createHearts(amount) {
         i++
     ) {
 
-
         setTimeout(function() {
 
-
             const heart =
-                document.createElement(
-                    "div"
-                );
+                document.createElement("div");
 
 
             heart.className =
@@ -1312,12 +1147,14 @@ function createHearts(amount) {
 
 
             const emojis = [
+
                 "❤️",
                 "💗",
                 "💕",
                 "💖",
                 "💘",
                 "💝"
+
             ];
 
 
@@ -1338,14 +1175,18 @@ function createHearts(amount) {
 
 
             heart.style.fontSize =
-                (15 +
-                Math.random()*25)
+                (
+                    15 +
+                    Math.random() * 25
+                )
                 + "px";
 
 
             heart.style.animationDuration =
-                (3 +
-                Math.random()*5)
+                (
+                    3 +
+                    Math.random() * 5
+                )
                 + "s";
 
 
