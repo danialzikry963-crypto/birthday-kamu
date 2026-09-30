@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For You ❤️</title>
+
+
+<style>
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #2b1020,
+            #10050b 60%,
+            #050205
+        );
+
+    color: white;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+/* ==================================================
+   HOME PAGE
+================================================== */
+
+#home {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    position: relative;
+}
+
+
+.home-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    animation: fadeIn 2s ease;
+}
+
+
+.small-text {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #ffb6ce;
+
+    margin-bottom: 25px;
+}
+
+
+.home-title {
+
+    font-size:
+        clamp(35px, 8vw, 70px);
+
+    font-weight: 300;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.home-title span {
+
+    color: #ff6f9f;
+}
+
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+
+.time-box {
+
+    width: 105px;
+
+    padding: 18px 10px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+.time-box span {
+
+    display: block;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.time-box small {
+
+    color: #ffb6ce;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.waiting {
+
+    margin-top: 35px;
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+
+    0%,100% {
+        opacity: .4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* ==================================================
+   SURPRISE UNLOCK SCREEN
+================================================== */
+
+#unlock {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background:
+        radial-gradient(
+            circle,
+            #40152c,
+            #090308
+        );
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.unlock-content {
+
+    animation:
+        unlockAppear 1.5s ease;
+}
+
+
+.unlock-content h1 {
+
+    font-size:
+        clamp(45px, 10vw, 90px);
+
+    color: #ff6f9f;
+
+    margin-bottom: 20px;
+}
+
+
+.unlock-content p {
+
+    color: #ddd;
+
+    margin-bottom: 35px;
+}
+
+
+.surprise-button {
+
+    border: none;
+
+    padding: 18px 35px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff477e,
+            #d6336c
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 35px rgba(255,71,126,.4);
+
+    transition: .3s;
+}
+
+
+.surprise-button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+@keyframes unlockAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.5)
+            rotate(-5deg);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            rotate(0);
+    }
+}
+
+
+/* ==================================================
+   SURPRISE PAGE
+================================================== */
+
+#surprisePage {
+
+    display: none;
+
+    min-height: 100vh;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    animation: fadeIn 2s ease;
+}
+
+
+.surprise-container {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.surprise-label {
+
+    color: #ff9fbd;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+.surprise-title {
+
+    font-size:
+        clamp(45px, 9vw, 80px);
+
+    color: #ff6f9f;
+
+    margin-bottom: 10px;
+}
+
+
+.girl-name {
+
+    font-size: 25px;
+
+    margin-bottom: 40px;
+
+    color: #ffd3e1;
+}
+
+
+/* ==================================================
+   MAIN PHOTO
+================================================== */
+
+.main-photo {
+
+    width: 280px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border:
+        6px solid rgba(255,255,255,.8);
+
+    box-shadow:
+        0 0 50px rgba(255,80,130,.35);
+
+    margin-bottom: 45px;
+}
+
+
+/* ==================================================
+   LOVE LETTER
+================================================== */
+
+.letter {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 35px 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    backdrop-filter: blur(10px);
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+    color: #eee;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.3);
+}
+
+
+.letter-title {
+
+    font-size: 28px;
+
+    color: #ff8faf;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==================================================
+   GALLERY
+================================================== */
+
+.gallery-title {
+
+    margin-top: 70px;
+
+    margin-bottom: 25px;
+
+    font-size: 30px;
+
+    color: #ff9fbd;
+}
+
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.gallery img {
+
+    width: 100%;
+
+    aspect-ratio: 1/1;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    transition: .4s;
+
+    cursor: pointer;
+
+    border:
+        2px solid rgba(255,255,255,.1);
+}
+
+
+.gallery img:hover {
+
+    transform:
+        scale(1.04)
+        rotate(1deg);
+
+    box-shadow:
+        0 10px 30px rgba(255,80,130,.3);
+}
+
+
+/* ==================================================
+   MUSIC
+================================================== */
+
+.music-box {
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.06);
+}
+
+
+.music-box p {
+
+    margin-bottom: 15px;
+
+    color: #ffb6ce;
+}
+
+
+.music-button {
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background: #ff477e;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+
+    margin-top: 70px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   HEARTS
+================================================== */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    pointer-events: none;
+
+    z-index: 2000;
+
+    animation:
+        floatHeart
+        linear
+        forwards;
+}
+
+
+@keyframes floatHeart {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 1;
+    }
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* ==================================================
+   FADE
+================================================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:600px) {
+
+    .time-box {
+
+        width: 75px;
+
+        padding: 14px 5px;
+    }
+
+
+    .time-box span {
+
+        font-size: 25px;
+    }
+
+
+    .gallery {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .main-photo {
+
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    .letter {
+
+        font-size: 15px;
+
+        padding: 25px 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     🏠 HOME PAGE
+================================================== -->
+
+<section id="home">
+
+    <div class="home-content">
+
+
+        <div class="small-text">
+
+            Something special is coming...
+
+        </div>
+
+
+        <h1 class="home-title">
+
+            For
+            <span>[NAMA GF]</span>
+            ❤️
+
+        </h1>
+
+
+        <p>
+
+            Your surprise will be waiting for you.
+
+        </p>
+
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown">
+
+
+            <div class="time-box">
+
+                <span id="days">
+                    00
+                </span>
+
+                <small>
+                    Days
+                </small>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <small>
+                    Hours
+                </small>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <small>
+                    Minutes
+                </small>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <small>
+                    Seconds
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="waiting">
+
+            🔒 Surprise locked...
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     🎉 UNLOCK SCREEN
+================================================== -->
+
+<section id="unlock">
+
+    <div class="unlock-content">
+
+
+        <h1>
+
+            🎉
+
+        </h1>
+
+
+        <h1>
+
+            It's Time!
+
+        </h1>
+
+
+        <p>
+
+            Your birthday surprise is finally unlocked ❤️
+
+        </p>
+
+
+        <button
+            class="surprise-button"
+            onclick="openSurprise()">
+
+            💌 Open Your Surprise
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ❤️ SURPRISE PAGE
+================================================== -->
+
+<section id="surprisePage">
+
+
+<div class="surprise-container">
+
+
+    <div class="surprise-label">
+
+        A special message for
+
+    </div>
+
+
+    <h1 class="surprise-title">
+
+        Happy Birthday ❤️
+
+    </h1>
+
+
+    <div class="girl-name">
+
+        [NAMA GF]
+
+    </div>
+
+
+    <!-- MAIN PHOTO -->
+
+    <img
+        src="photo1.jpg"
+        class="main-photo"
+        alt="Our Photo"
+    >
+
+
+    <!-- LOVE LETTER -->
+
+    <div class="letter">
+
+
+        <div class="letter-title">
+
+            💌 Dear My Favourite Person
+
+        </div>
+
+
+        <p>
+
+            Happy Birthday, sayang ❤️
+
+            <br><br>
+
+            Today is your special day,
+            and I just want to remind you
+            how important you are to me.
+
+            <br><br>
+
+            Thank you for every laugh,
+            every conversation,
+            every memory,
+            and every little moment
+            we've shared together.
+
+            <br><br>
+
+            I hope this new chapter
+            of your life brings you
+            happiness, peace,
+            success and many beautiful memories.
+
+            <br><br>
+
+            I may not always be perfect,
+            and sometimes I may not know
+            exactly what to say...
+
+            <br><br>
+
+            But one thing I know for sure:
+
+            <br><br>
+
+            <strong>
+            I'm really happy that I get
+            to know someone like you. ❤️
+            </strong>
+
+            <br><br>
+
+            Keep smiling,
+            keep being yourself,
+            and never forget
+            how special you are.
+
+            <br><br>
+
+            Happy Birthday,
+            my favourite person. ❤️
+
+        </p>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         📸 GALLERY
+    ================================================== -->
+
+    <h2 class="gallery-title">
+
+        📸 Our Memories
+
+    </h2>
+
+
+    <div class="gallery">
+
+
+        <img
+            src="photo1.jpg"
+            alt="Memory 1"
+        >
+
+
+        <img
+            src="photo2.jpg"
+            alt="Memory 2"
+        >
+
+
+        <img
+            src="photo3.jpg"
+            alt="Memory 3"
+        >
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         🎵 MUSIC
+    ================================================== -->
+
+    <div class="music-box">
+
+
+        <p>
+
+            🎵 A little song for you
+
+        </p>
+
+
+        <button
+            class="music-button"
+            onclick="toggleMusic()">
+
+            ▶ Play Music
+
+        </button>
+
+
+        <audio
+            id="music"
+            loop>
+
+            <source
+                src="song.mp3"
+                type="audio/mpeg">
+
+        </audio>
+
+
+    </div>
+
+
+
+    <div class="footer">
+
+        Made with ❤️ just for you
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<script>
+
+
+/* ==================================================
+   🎂 BIRTHDAY DATE
+==================================================
+
+   FORMAT:
+
+   YYYY-MM-DD HH:MM:SS
+
+   Contoh:
+
+   15 October 2026
+   12:00 AM
+
+================================================== */
+
+
+const birthday =
+    new Date(
+        "2026-9-30 16:00:00"
+    ).getTime();
+
+
+
+/* ==================================================
+   COUNTDOWN
+================================================== */
+
+const countdown =
+setInterval(function() {
+
+
+    const now =
+        new Date().getTime();
+
+
+    const distance =
+        birthday - now;
+
+
+
+    /* ==============================================
+       STILL COUNTING
+    ============================================== */
+
+    if(distance > 0) {
+
+
+        const days =
+            Math.floor(
+                distance /
+                (1000 * 60 * 60 * 24)
+            );
+
+
+        const hours =
+            Math.floor(
+                (distance %
+                (1000 * 60 * 60 * 24))
+                /
+                (1000 * 60 * 60)
+            );
+
+
+        const minutes =
+            Math.floor(
+                (distance %
+                (1000 * 60 * 60))
+                /
+                (1000 * 60)
+            );
+
+
+        const seconds =
+            Math.floor(
+                (distance %
+                (1000 * 60))
+                /
+                1000
+            );
+
+
+
+        document.getElementById(
+            "days"
+        ).innerText =
+            String(days).padStart(2,"0");
+
+
+        document.getElementById(
+            "hours"
+        ).innerText =
+            String(hours).padStart(2,"0");
+
+
+        document.getElementById(
+            "minutes"
+        ).innerText =
+            String(minutes).padStart(2,"0");
+
+
+        document.getElementById(
+            "seconds"
+        ).innerText =
+            String(seconds).padStart(2,"0");
+
+
+    }
+
+
+
+    /* ==============================================
+       🎉 BIRTHDAY ARRIVED
+    ============================================== */
+
+    else {
+
+
+        clearInterval(countdown);
+
+
+        document.getElementById(
+            "days"
+        ).innerText = "00";
+
+
+        document.getElementById(
+            "hours"
+        ).innerText = "00";
+
+
+        document.getElementById(
+            "minutes"
+        ).innerText = "00";
+
+
+        document.getElementById(
+            "seconds"
+        ).innerText = "00";
+
+
+        /* Hide homepage */
+
+        document.getElementById(
+            "home"
+        ).style.display = "none";
+
+
+        /* Show unlock */
+
+        document.getElementById(
+            "unlock"
+        ).style.display = "flex";
+
+
+        /* BIG HEART EFFECT */
+
+        createHearts(60);
+
+    }
+
+
+},1000);
+
+
+
+/* ==================================================
+   💌 OPEN SURPRISE
+================================================== */
+
+function openSurprise() {
+
+
+    /* Hide unlock screen */
+
+    document.getElementById(
+        "unlock"
+    ).style.display = "none";
+
+
+    /* Show surprise page */
+
+    document.getElementById(
+        "surprisePage"
+    ).style.display = "block";
+
+
+    /* Start hearts */
+
+    createHearts(40);
+
+
+    /* Scroll to top */
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+
+}
+
+
+
+/* ==================================================
+   🎵 MUSIC
+================================================== */
+
+let playing = false;
+
+
+function toggleMusic() {
+
+
+    const music =
+        document.getElementById("music");
+
+
+    const button =
+        document.querySelector(
+            ".music-button"
+        );
+
+
+    if(!playing) {
+
+
+        music.play();
+
+
+        playing = true;
+
+
+        button.innerText =
+            "⏸ Pause Music";
+
+
+    }
+
+
+    else {
+
+
+        music.pause();
+
+
+        playing = false;
+
+
+        button.innerText =
+            "▶ Play Music";
+
+
+    }
+
+}
+
+
+
+/* ==================================================
+   ❤️ FLOATING HEARTS
+================================================== */
+
+function createHearts(amount) {
+
+
+    for(
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+
+        setTimeout(function() {
+
+
+            const heart =
+                document.createElement(
+                    "div"
+                );
+
+
+            heart.className =
+                "heart";
+
+
+            const emojis = [
+                "❤️",
+                "💗",
+                "💕",
+                "💖",
+                "💘",
+                "💝"
+            ];
+
+
+            heart.innerText =
+                emojis[
+                    Math.floor(
+                        Math.random()
+                        *
+                        emojis.length
+                    )
+                ];
+
+
+            heart.style.left =
+                Math.random()
+                * 100
+                + "vw";
+
+
+            heart.style.fontSize =
+                (15 +
+                Math.random()*25)
+                + "px";
+
+
+            heart.style.animationDuration =
+                (3 +
+                Math.random()*5)
+                + "s";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            setTimeout(function() {
+
+                heart.remove();
+
+            },8000);
+
+
+        }, i * 80);
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
